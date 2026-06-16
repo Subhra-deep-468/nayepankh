@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NayePankh Foundation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            NayePankh Foundation
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donation.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="slider">
+
+        <img src="images/slide1.jpg" class="slide active">
+        <img src="images/slide2.jpg" class="slide">
+        <img src="images/slide3.jpg" class="slide">
+        <img src="images/slide4.jpg" class="slide">
+
+    </div>
+
+    <div class="hero-content">
+        <h1>NayePankh Foundation</h1>
+        <p>Giving Wings To Dreams</p>
+    </div>
+
+</section>
+
+<!-- Mission -->
+
+<section class="mission" data-aos="fade-right">
+
+    <h2>Our Mission</h2>
+
+    <p>
+        NayePankh Foundation works towards creating a brighter future
+        for underprivileged communities by providing education,
+        healthcare support, food assistance and skill development.
+    </p>
+
+</section>
+
+<!-- Services -->
+
+<section class="cards-section">
+
+    <div class="card" data-aos="zoom-in">
+
+        <i class="fas fa-book"></i>
+
+        <h3>Education</h3>
+
+        <p>
+            Supporting children's education through learning programs.
+        </p>
+
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+
+        <i class="fas fa-heart"></i>
+
+        <h3>Healthcare</h3>
+
+        <p>
+            Organizing health camps and awareness programs.
+        </p>
+
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+
+        <i class="fas fa-hands-helping"></i>
+
+        <h3>Community Support</h3>
+
+        <p>
+            Helping families with food drives and welfare activities.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Counter Section -->
+
+<section class="counter-section">
+
+    <div class="counter-box">
+        <h2 class="counter" data-target="500">100+</h2>
+        <p>Volunteers</p>
+    </div>
+
+    <div class="counter-box">
+        <h2 class="counter" data-target="2000">350+</h2>
+        <p>Children Helped</p>
+    </div>
+
+    <div class="counter-box">
+        <h2 class="counter" data-target="50">15+</h2>
+        <p>Projects Completed</p>
+    </div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonials">
+
+    <h2>What People Say</h2>
+
+    <div class="testimonial-card">
+
+        <p>
+            "NayePankh Foundation has positively impacted many lives
+            through its dedicated social work."
+        </p>
+
+        <h4>- Community Member</h4>
+
+    </div>
+
+</section>
+
+<!-- Call To Action -->
+
+<section class="cta">
+
+    <h2>Be The Change</h2>
+
+    <p>
+        Join our mission and help us create a better future.
+    </p>
+
+    <a href="donation.html" class="btn">
+        Donate Now
+    </a>
+
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 400,
+    delay: 0,
+    offset: 50,
+    once: true,
+    easing: "ease-out"
+});
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

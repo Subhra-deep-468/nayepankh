@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | NayePankh Foundation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            NayePankh Foundation
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="volunteer.html" class="active">Volunteer</a></li>
+            <li><a href="donation.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1 data-aos="fade-down">Become A Volunteer</h1>
+</section>
+
+<section class="volunteer-section">
+
+    <div class="volunteer-content" data-aos="fade-right">
+
+        <h2>Join Our Mission</h2>
+
+        <p>
+            Volunteers are the backbone of NayePankh Foundation.
+            Help us make a positive impact in education,
+            healthcare and community welfare.
+        </p>
+
+        <ul>
+            <li>✔ Education Programs</li>
+            <li>✔ Healthcare Camps</li>
+            <li>✔ Food Distribution Drives</li>
+            <li>✔ Social Awareness Campaigns</li>
+        </ul>
+
+    </div>
+
+    <div class="volunteer-form" data-aos="fade-left">
+
+        <form id="volunteerForm">
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required>
+
+            <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required>
+
+            <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required>
+
+            <select id="interest" required>
+                <option value="">
+                    Select Area of Interest
+                </option>
+
+                <option>
+                    Education
+                </option>
+
+                <option>
+                    Healthcare
+                </option>
+
+                <option>
+                    Food Distribution
+                </option>
+
+                <option>
+                    Environment
+                </option>
+            </select>
+
+            <textarea
+            id="message"
+            rows="5"
+            placeholder="Why do you want to volunteer?"
+            required></textarea>
+
+            <button type="submit" class="btn">
+                Register Now
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

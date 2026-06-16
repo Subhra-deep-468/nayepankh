@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NayePankh Foundation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            NayePankh Foundation
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donation.html">Donate</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1 data-aos="fade-down">Contact Us</h1>
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-info" data-aos="fade-right">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            We'd love to hear from you. Reach out for volunteering,
+            partnerships, donations, or any questions.
+        </p>
+
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kolkata, West Bengal, India</span>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 9876543210</span>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@nayepankhfoundation.org</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+    <div class="contact-form" data-aos="fade-left">
+
+        <form id="contactForm">
+
+            <input
+            type="text"
+            placeholder="Full Name"
+            required>
+
+            <input
+            type="email"
+            placeholder="Email Address"
+            required>
+
+            <input
+            type="text"
+            placeholder="Subject"
+            required>
+
+            <textarea
+            rows="5"
+            placeholder="Your Message"
+            required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

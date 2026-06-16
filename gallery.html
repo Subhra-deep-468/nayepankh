@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | NayePankh Foundation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            NayePankh Foundation
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donation.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1 data-aos="fade-down">Our Gallery</h1>
+</section>
+
+<section class="gallery-container">
+
+    <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="">
+    </div>
+
+    <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="">
+    </div>
+
+    <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800" alt="">
+    </div>
+
+    <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800" alt="">
+    </div>
+
+    <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800" alt="">
+    </div>
+
+    <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800" alt="">
+    </div>
+
+</section>
+
+<!-- Lightbox -->
+
+<div class="lightbox">
+
+    <span class="close-btn">&times;</span>
+
+    <img class="lightbox-img" src="" alt="">
+
+</div>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

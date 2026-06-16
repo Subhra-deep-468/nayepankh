@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | NayePankh Foundation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            NayePankh Foundation
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html" class="active">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donation.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1 data-aos="fade-down">Our Programs</h1>
+</section>
+
+<section class="programs-container">
+
+    <div class="program-card" data-aos="fade-up">
+        <i class="fas fa-book-reader"></i>
+        <h3>Education Support</h3>
+        <p>
+            Free learning resources, tutoring sessions, and scholarships
+            for underprivileged children.
+        </p>
+    </div>
+
+    <div class="program-card" data-aos="fade-up">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Healthcare Camps</h3>
+        <p>
+            Organizing medical checkups, awareness programs,
+            and health camps in rural communities.
+        </p>
+    </div>
+
+    <div class="program-card" data-aos="fade-up">
+        <i class="fas fa-utensils"></i>
+        <h3>Food Distribution</h3>
+        <p>
+            Providing nutritious meals and food kits
+            to families in need.
+        </p>
+    </div>
+
+    <div class="program-card" data-aos="fade-up">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Skill Development</h3>
+        <p>
+            Training programs focused on employability,
+            digital literacy, and entrepreneurship.
+        </p>
+    </div>
+
+    <div class="program-card" data-aos="fade-up">
+        <i class="fas fa-female"></i>
+        <h3>Women Empowerment</h3>
+        <p>
+            Workshops and support initiatives
+            promoting financial independence.
+        </p>
+    </div>
+
+    <div class="program-card" data-aos="fade-up">
+        <i class="fas fa-seedling"></i>
+        <h3>Environmental Awareness</h3>
+        <p>
+            Tree plantation drives and campaigns
+            encouraging sustainable living.
+        </p>
+    </div>
+
+</section>
+
+<section class="impact-section">
+
+    <h2 data-aos="zoom-in">Our Impact</h2>
+
+    <div class="impact-grid">
+
+        <div class="impact-card">
+            <h3>2000+</h3>
+            <p>Children Educated</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>100+</h3>
+            <p>Health Camps</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>5000+</h3>
+            <p>Meals Distributed</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>500+</h3>
+            <p>Active Volunteers</p>
+        </div>
+
+    </div>
+
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
